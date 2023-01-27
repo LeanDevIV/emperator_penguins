@@ -1,7 +1,11 @@
 .body {
   background-image: url(img/glaciar.jpg);
   background-position: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 .container-titulo {
   display: flex;
   justify-content: center;
@@ -10,7 +14,7 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-shadow: 2px 5px 5px rgba(13, 136, 224, 0.7);
   text-align: center;
-  border: 3px inset rgb(0, 92, 99);
+  /* border: 3px inset rgb(0, 92, 99); */
   margin: 2%;
   padding: 5px;
   border-radius: 10px;
@@ -50,10 +54,12 @@
   height: 100%;
 }
 
-.post1 {
+.post {
   background-color: rgba(3, 75, 117, 0.5);
-  border: 5px rgba(0, 0, 0, 0.8) outset;
+  /* border: 5px rgba(0, 0, 0, 0.8) outset; */
   color: aliceblue;
+  padding: 15px;
+  margin: 0px 20px;
 }
 .parrafo1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -73,6 +79,7 @@
   margin-left: 15px;
   border: rgba(55, 151, 241, 0.658) 5px outset;
   width: 400px;
+  height: 300px;
 }
 
 .pe {
@@ -80,14 +87,44 @@
   text-decoration: underline;
   font-size: 35px;
   text-shadow: rgba(13, 129, 211, 0.7) 0 -2px 5px;
+  margin: 0;
+  padding-left: 15px;
 }
-.post2 {
-  background-color: rgba(3, 75, 117, 0.5);
-  border: 5px rgba(0, 0, 0, 0.8) outset;
+.button {
+  border: 2px solid #3498db; /* Blue */
+  color: aliceblue; /* Blue */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to bottom,
+    #eeeeee,
+    #6fa39f,
+    #6a9fa0,
+    rgb(86, 133, 130)
+  );
+}
+
+.button:hover {
+  background-color: #3498db; /* Blue */
+  color: black;
+}
+.footer {
+  background-color: rgb(44, 44, 44);
+  text-align: center;
+}
+.copy {
+  margin: 0;
+  /* padding: 1rem 0; */
+  padding-top: 1rem;
+  padding-bottom: 25px;
   color: aliceblue;
 }
-.post3 {
-  background-color: rgba(3, 75, 117, 0.5);
-  border: 5px rgba(0, 0, 0, 0.8) outset;
-  color: aliceblue;
+.arrow {
+  color: white;
+  padding-right: 10px;
 }
